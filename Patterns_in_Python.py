@@ -89,4 +89,77 @@ for i in range(n):
 n1 = (int)(input("Enter the number of rows :"))
 for i in range(n1):
    print(('* ')*(n1-i))
+   
+#----------x----------x----------x----------x----------x----------x----------x----------
+
+#To print the pattern for example if n = 4
+# 1 1 1 1
+# 2 2 2
+# 3 3
+# 4
+
+n=(int)(input("Enter the number :"))
+for i in range(n):
+    print((chr(49+i))*(n-i))
+ 
+ #----------x----------x----------x----------x----------x----------   
+    
+#To print the pattern for example if n = 4
+# 1 2 3 4
+# 1 2 3
+# 1 2
+# 1
+
+n=(int)(input("Enter the number :"))
+for i in range(n):
+    for j in range(n-i):
+        print((j+1), end =' ') 
+    print(end='\n') 
+    
+#-----------x----------x-----------x-----------x-----------x-----------x-----------
+
+#To print the pyramid, example if n=4
+#    *
+#   * *
+#  * * *
+# * * * *
+
+n = (int)(input("Enter the number of rows :"))
+for i in range(n):
+    print(end =' '*(n-i-1))
+    print(('* ')*(i+1))
+    
+#----------x----------x----------x----------x----------x
+
+#To print the pyramid, example if n=4
+#    4
+#   4 4
+#  4 4 4
+# 4 4 4 4
+
+n = (int)(input("Enter the number of rows :"))
+for i in range(n):
+    print(end =' '*(n-i-1))
+    print((str(n)+' ')*(i+1))
+    
+#----------x----------x----------x----------x----------x
+
+#To print the pyramid, example if n=4
+#    1
+#   2 2
+#  3 3 3
+# 4 4 4 4
+
+#1st approach
+n = (int)(input("Enter the number of rows :"))
+for i in range(n):
+    print(end =' '*(n-i-1))
+    print((chr(49+i)+' ')*(i+1))
+
+#2nd approach
+n = (int)(input("Enter the number of rows :"))
+for i in range(n):
+    print(' '*(n-i-1)+(str(i+1)+' ')*(i+1))
+    
+             
   
