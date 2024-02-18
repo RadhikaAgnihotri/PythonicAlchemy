@@ -227,7 +227,10 @@ for i in range(n):#number of rows
 for i in range(n-1): #inverse half 
     for j in range(n-i-1):
         print(chr(65+j),end=' ')
-    print()     
+    print() 
+
+#----------x----------x----------x----------x----------
+        
 
     
     
