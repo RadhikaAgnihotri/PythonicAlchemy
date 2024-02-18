@@ -220,17 +220,57 @@ for i in range(n-1): #inverse half
 # A
 
 n=(int)(input("Enter a number :"))
-for i in range(n):#number of rows
+for i in range(n): #number of rows
     for j in range(i+1): 
         print(chr(65+j), end = ' ')
     print()    
 for i in range(n-1): #inverse half 
-    for j in range(n-i-1):
+    for j in range(n-i-1): #number of characters in each row = [n-i-1]
         print(chr(65+j),end=' ')
     print() 
 
 #----------x----------x----------x----------x----------
+
+#To print hollow rhombus, example if n=5
+#     ***** 
+#    *   *
+#   *   *
+#  *   *
+# *****
+
+n=(int)(input("Enter the value : "))
+for i in range(n):
+    for j in range(n-i-1):
+        print(' ', end="")
+    for k in range(n):
+        if k==0 or i==0 or k==(n-1) or i==(n-1):
+            print('*', end="")
+        else:
+            print(" ",end="")
+    print()        
+    
+#----------x----------x----------x----------x----------
+
+#To print the pattern, example if n = 5
+# 1
+# 22
+# 303
+# 4004
+# 50005
+
+n = int(input("Enter a number: "))
+for i in range(1, n + 1): #to iterate for rows
+    # Print the initial part of each row
+    for j in range(1, i + 1):
+        if j == i or j == 1:
+            print(chr(49+i-1), end="")
+        else:
+            print(0, end="")
+    
+    # Move to the next line after completing each row
+    print()    
         
+#----------x----------x----------x----------x----------        
 
     
     
