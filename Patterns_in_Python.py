@@ -112,7 +112,7 @@ for i in range(n):
 
 n=(int)(input("Enter the number :"))
 for i in range(n):
-    for j in range(n-i):
+    for j in range(n-i): #relation b/w number of digits in each row and iteration of i
         print((j+1), end =' ') 
     print(end='\n') 
     
@@ -160,6 +160,76 @@ for i in range(n):
 n = (int)(input("Enter the number of rows :"))
 for i in range(n):
     print(' '*(n-i-1)+(str(i+1)+' ')*(i+1))
+    
+#----------x----------x----------x----------x----------
+
+#To print a pyramid pattern, example if n=4
+#   D
+#  C C 
+# B B B
+#A A A A
+
+n = (int)(input("Enter the number of rows :"))
+count = n
+for i in range(n):
+    print(end =' '*(n-i-1))
+    print((chr(64+count)+' ')*(i+1))
+    count -= 1
+#----------x----------x----------x----------x----------
+
+#To print a pyramid pattern, example if n=4
+#   D
+#  D C 
+# D C B
+#D C B A
+
+n = (int)(input("Enter the number of rows :"))
+for i in range(n): #printing spaces
+    print(' '*(n-i-1),end=' ') #no. of spaces in each row = [n-i-1]
+    #since in each row symbol is changing we need nested loop[compulsory]
+    for j in range(i+1): #printing number of symbols in each row = [i+1]
+        
+        print((chr(64+n-j)),end = ' ') # [64+n-j] is the character to be printed
+    print( ) 
+    
+#----------x----------x----------x----------x----------
+#To print right half diamond, example if n=4
+# *
+# * *
+# * * *
+# * * * *
+# * * *
+# * *
+# *
+
+n=(int)(input("Enter a number :"))
+for i in range(n): #number of rows[first half rows till 4 stars]
+    print('* '*(i+1), end = '\n')
+for i in range(n-1): #inverse half 
+    print('* '*(n-i-1))
+    
+#----------x----------x----------x----------x----------
+
+#To print right half diamond, example if n=4
+# A
+# A B
+# A B C
+# A B C D
+# A B C
+# A B
+# A
+
+n=(int)(input("Enter a number :"))
+for i in range(n):#number of rows
+    for j in range(i+1): 
+        print(chr(65+j), end = ' ')
+    print()    
+for i in range(n-1): #inverse half 
+    for j in range(n-i-1):
+        print(chr(65+j),end=' ')
+    print()     
+
+    
     
              
   
