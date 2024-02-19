@@ -12,15 +12,5 @@ if(reversed_number == duplicate):
 else:
     print("No the number", duplicate, "is not a palindrome!")
     
-#Palindrome String
 
-string = input(("Enter a string :"))
-if(string == string[::-1]):
-    print("The string is a palindrome")
-else:
-    print("Not a palindrome")  
-<<<<<<< HEAD
-    
-=======
-            
->>>>>>> 58bab6d33ec068d4017ba44d7dab59afbfcd1abf
+
