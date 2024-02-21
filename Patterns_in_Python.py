@@ -128,6 +128,7 @@ n = (int)(input("Enter the number of rows :"))
 for i in range(n):
     print(end =' '*(n-i-1))
     print(('* ')*(i+1))
+    #print(' '*(n-i-1)+'* '*(i+1)) #concise representation of lines 129-130    
     
 #----------x----------x----------x----------x----------x
 
@@ -164,10 +165,10 @@ for i in range(n):
 #----------x----------x----------x----------x----------
 
 #To print a pyramid pattern, example if n=4
-#   D
-#  C C 
-# B B B
-#A A A A
+#    D
+#   C C 
+#  B B B
+# A A A A
 
 n = (int)(input("Enter the number of rows :"))
 count = n
@@ -178,10 +179,10 @@ for i in range(n):
 #----------x----------x----------x----------x----------
 
 #To print a pyramid pattern, example if n=4
-#   D
-#  D C 
-# D C B
-#D C B A
+#    D
+#   D C 
+#  D C B
+# D C B A
 
 n = (int)(input("Enter the number of rows :"))
 for i in range(n): #printing spaces
@@ -253,19 +254,19 @@ for i in range(n):
 
 #To print the pattern, example if n = 5
 # 1
-# 22
-# 303
-# 4004
-# 50005
+# 2 2
+# 3 0 3
+# 4 0 0 4
+# 5 0 0 0 5
 
 n = int(input("Enter a number: "))
 for i in range(1, n + 1): #to iterate for rows
     # Print the initial part of each row
     for j in range(1, i + 1):
         if j == i or j == 1:
-            print(chr(49+i-1), end="")
+            print(chr(49+i-1), end=" ")
         else:
-            print(0, end="")
+            print(0, end=" ")
     
     # Move to the next line after completing each row
     print()    
