@@ -20,5 +20,174 @@ for i in range(2,n+1,2):
         
 #----------x----------x-----------x-----------x-----------x-----------x-----------x-----------
 
+#To print the pattern, example if n=5
+# A
+# A B
+# A B C
+# A B C D
+# A B C D E
 
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    for j in range(i+1):
+        print(chr(65+j)+' ',end='')
+    print() 
+    
+#----------x----------x----------x----------x----------x----------x
+
+#To print a pattern, example if n=4
+# 4
+# 4 3
+# 4 3 2
+# 4 3 2 1
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    for j in range(i+1):
+        print(chr(48+n-j)+' ',end='') #print(n-j,end='') another way
+    print() 
+           
+#----------x----------x----------x----------x----------x----------x   
+
+#To print the pattern, example if n=4
+# D
+# D C 
+# D C B 
+# D C B A
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    for j in range(i+1):
+        print(chr(64+n-j),end=' ')
+    print()
+        
+#----------x----------x----------x----------x----------x----------x
+
+#To print the pattern, example if n=4
+# A A A A
+# B B B 
+# C C  
+# D 
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print((chr(65+i)+' ')*(n-i))
+           
+#----------x----------x----------x----------x----------x----------x       
+
+#To print the pattern, example if n=4
+# 4 4 4 4
+# 3 3 3 
+# 2 2  
+# 1
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    #print((chr(48+n-i)+' ')*(n-i)) 
+    print((str(n-i)+' ')*(n-i)) #for '+' operator, both args should be str
+    
+#----------x----------x----------x----------x----------x----------x
+
+#To print the pattern, example if n=4
+# D D D D
+# C C C 
+# B B  
+# A
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print((chr(64+n-i)+' ')*(n-i))
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print the pattern, example if n=4
+# A B C D
+# A B C 
+# A B  
+# A
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    for j in range(n-i):
+        print((chr(65+j)+' '),end='')
+    print()
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print the pattern, example if n=4
+# 4 3 2 1
+# 4 3 2 
+# 4 3  
+# 4
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    for j in range(n-i):
+        print((chr(48+n-j)+' '),end='')
+        #print(n-j,end=' ')
+    print()
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print the pattern, example if n=4
+# D C B A
+# D C B 
+# D C  
+# D
+
+n = (int)(input("Enter a number :"))
+for i in range(n): #row loop
+    for j in range(n-i): #column loop
+        print((chr(64+n-j)+' '),end='')
+        #print(chr(64+n-j),end=' ')
+    print()
+       
+#----------x----------x----------x----------x----------x----------x
+
+#To print the pattern, example if n=4
+#    1 
+#   1 2 
+#  1 2 3   
+# 1 2 3 4 
+
+n = int(input("Enter a number :"))
+for i in range(n):
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print(chr(49+j)+' ',end='')
+        #print(j+1,end=' ')
+    print() 
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print the pattern, example if n=4
+#    A  
+#   A B 
+#  A B C   
+# A B C D 
+
+n = int(input("Enter a number :"))
+for i in range(n):
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print(chr(65+j),end=' ')
+    print() 
+           
+#----------x----------x----------x----------x----------x----------x 
+
+#To print the pattern, example if n=4
+#    4  
+#   4 3 
+#  4 3 2   
+# 4 3 2 1 
+
+n = int(input("Enter a number :"))
+for i in range(n):
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print(chr(48+n-j),end=' ')
+        #print(n-j,end=' ')
+    print()
+          
+#----------x----------x----------x----------x----------x----------x       
         
