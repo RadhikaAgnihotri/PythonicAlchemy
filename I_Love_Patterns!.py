@@ -189,5 +189,95 @@ for i in range(n):
         #print(n-j,end=' ')
     print()
           
+#----------x----------x----------x----------x----------x----------x
+
+#Accept an integer n, and print value of n+nn+nnn
+
+#Logic if pattern only sticks to n+nn+nnn
+n = int(input())
+sum = 0
+for i in range(n):
+    sum = ((1*n)+(11*n)+(111*n))
+print(sum)
+
+#Logic if pattern
+# Accept an integer N
+N = int(input())
+
+# Calculate the value of N+NN+NNN
+result = N + int(str(N) * 2) + int(str(N) * 3)
+
+# Display the result
+print(result)   
+    
+#----------x----------x----------x----------x----------x----------x
+
+#To print an inverted pyramid, if n=4
+# * * * *
+#  * * *
+#   * *
+#    *
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print((' '*(i))+('* '*(n-i)))
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print an inverted pyramid, if n=4
+# 1 1 1 1
+#  2 2 2
+#   3 3
+#    4
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print((' '*(i))+((chr(49+i)+' ')*(n-i)))
+    #print(' '*i+(str(i+1)+' ')*(n-i))
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print an inverted pyramid, if n=4
+# A A A A
+#  B B B
+#   C C
+#    D
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print(' '*i+(chr(65+i)+' ')*(n-i))
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print an inverted pyramid, if n=4
+# 1 2 3 4
+#  1 2 3
+#   1 2
+#    1
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print(' '*i,end='')
+    for j in range(n-i):
+        print(chr(49+j)+' ',end='')
+        #print(j+1,end=' ')
+    print()
+           
+#----------x----------x----------x----------x----------x----------x 
+
+#To print an inverted pyramid, if n=4
+# A B C D
+#  A B C
+#   A B
+#    A
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print(' '*i,end='')
+    for j in range(n-i):
+        print(chr(65+j),end=' ')
+    print()
+          
 #----------x----------x----------x----------x----------x----------x       
+      
         
