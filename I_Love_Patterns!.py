@@ -278,6 +278,37 @@ for i in range(n):
         print(chr(65+j),end=' ')
     print()
           
+#----------x----------x----------x----------x----------x----------x
+
+#To print an inverted pyramid, if n=4
+# 4 3 2 1
+#  4 3 2
+#   4 3
+#    4
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print(' '*i,end='')
+    for j in range(n-i):
+        print(chr(48+n-j),end=' ')
+        #print(n-j,end=' ')
+    print() 
+           
+#----------x----------x----------x----------x----------x----------x 
+
+#To print an inverted pyramid, if n=4
+# D C B A
+#  D C B
+#   D C
+#    D
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print(' '*i,end='')
+    for j in range(n-i):
+        print(chr(64+n-j),end=' ')
+    print() 
+          
 #----------x----------x----------x----------x----------x----------x       
       
         
