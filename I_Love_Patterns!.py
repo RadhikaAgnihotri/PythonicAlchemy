@@ -309,6 +309,38 @@ for i in range(n):
         print(chr(64+n-j),end=' ')
     print() 
           
+#----------x----------x----------x----------x----------x----------x
+
+#To print a diamond, if n=4
+#    *
+#   * *
+#  * * *
+# * * * *
+#  * * *
+#   * *
+#    *
+
+#1st method
+n = (int)(input("Enter a number :"))
+for i in range(n-1):
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print('* ',end='')
+    print()    
+for i in range(n):
+    print(' '*(i),end='')
+    for j in range(n-i):
+        print('* ',end='')
+    print()    
+  
+#2nd method/concise
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print(' '*(n-i-1)+'* '*(i+1))
+for i in range(n-1):
+    print(' '*(i+1)+'* '*(n-i-1))
+print()
+       
 #----------x----------x----------x----------x----------x----------x       
       
         
