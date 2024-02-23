@@ -414,7 +414,6 @@ for i in range(n-1):
 #   1 2
 #    1
 
-#1st method
 n = (int)(input("Enter a number :"))
 for i in range(n): #1st half of diamond i.e. pyramid
     print(' '*(n-i-1),end='')
@@ -438,7 +437,6 @@ for i in range(n-1): #2nd half of diamond i.e. inverted pyramid
 #   A B
 #    A
 
-#1st method
 n = (int)(input("Enter a number :"))
 for i in range(n): #1st half of diamond i.e. pyramid
     print(' '*(n-i-1),end='')
@@ -462,7 +460,6 @@ for i in range(n-1): #2nd half of diamond i.e. inverted pyramid
 #   4 3
 #    4
 
-#1st method
 n = (int)(input("Enter a number :"))
 for i in range(n): #1st half of diamond i.e. pyramid
     print(' '*(n-i-1),end='')
@@ -474,6 +471,30 @@ for i in range(n-1): #2nd half of diamond i.e. inverted pyramid
     print(' '*(i+1),end='')
     for j in range(n-i-1):
         print(chr(48+n-j),end=' ')
+    print()
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print a diamond, if n=4
+#    D 
+#   D C
+#  D C B 
+# D C B A
+#  D C B
+#   D C
+#    D
+
+n = (int)(input("Enter a number :"))
+for i in range(n): #1st half of diamond i.e. pyramid
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print(chr(64+n-j),end=' ')
+        #print(n-j,end=' ')
+    print()    
+for i in range(n-1): #2nd half of diamond i.e. inverted pyramid
+    print(' '*(i+1),end='')
+    for j in range(n-i-1):
+        print(chr(64+n-j),end=' ')
     print()
            
 #----------x----------x----------x----------x----------x----------x       
