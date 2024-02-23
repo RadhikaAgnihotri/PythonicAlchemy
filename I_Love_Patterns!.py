@@ -497,6 +497,119 @@ for i in range(n-1): #2nd half of diamond i.e. inverted pyramid
         print(chr(64+n-j),end=' ')
     print()
            
+#----------x----------x----------x----------x----------x----------x
+
+#To print a half diamond, if n=4
+# 1 
+# 2 2
+# 3 3 3 
+# 4 4 4 4
+# 3 3 3
+# 2 2
+# 1  
+
+n = (int)(input("Enter a number :"))
+for i in range(n): #1st half of diamond 
+    print((chr(49+i)+' ')*(i+1))
+    #print((str(i+1)+' ')*(i+1))
+for i in range(n-1):
+    print((chr(47+n-i)+' ')*(n-i-1))
+    #print((str(n-i-1)+' ')*(n-i-1))
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print a half diamond, if n=4
+# A 
+# B B
+# C C C 
+# D D D D
+# C C C
+# B B
+# A  
+
+n = (int)(input("Enter a number :"))
+for i in range(n): #1st half of diamond 
+    print((chr(65+i)+' ')*(i+1))
+for i in range(n-1):
+    print((chr(63+n-i)+' ')*(n-i-1))
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print a half diamond, if n=4
+# 4   
+# 4 3
+# 4 3 2  
+# 4 3 2 1
+# 4 3 2
+# 4 3
+# 4   
+
+n = (int)(input("Enter a number :"))
+for i in range(n): #1st half of diamond 
+    for j in range(i+1):
+        print(n-j,end=' ')
+    print()    
+for i in range(n-1):
+    for j in range(n-i-1):
+        print(n-j,end=' ')
+    print()
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print a half diamond, if n=4
+# D   
+# D C
+# D C B  
+# D C B A
+# D C B
+# D C
+# D   
+
+n = (int)(input("Enter a number :"))
+for i in range(n): #1st half of diamond 
+    for j in range(i+1):
+        print(chr(64+n-j),end=' ')
+    print()    
+for i in range(n-1): #2nd half of diamond
+    for j in range(n-i-1):
+        print(chr(64+n-j),end=' ')
+    print()
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print left half of diamond, if n=4
+#       *  
+#     * *
+#   * * *  
+# * * * *
+#   * * *
+#     * *
+#       *  
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print('  '*(n-i-1)+'* '*(i+1)) #2 spaces i.e. the space b/w 2 spaces
+   
+for i in range(n-1): 
+    print('  '*(i+1)+'* '*(n-i-1)) #2 spaces i.e. space symbol followed by space separator
+         
+#----------x----------x----------x----------x----------x----------x 
+
+#To print left half of diamond, if n=4
+#       1  
+#     2 2
+#   3 3 3  
+# 4 4 4 4
+#   3 3 3
+#     2 2
+#       1  
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print('  '*(n-i-1)+(str(i+1)+' ')*(i+1))
+for i in range(n-1): 
+    print('  '*(i+1)+(str(n-i-1)+' ')*(n-i-1)) 
+          
 #----------x----------x----------x----------x----------x----------x       
       
         
