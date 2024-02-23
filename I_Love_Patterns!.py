@@ -372,6 +372,85 @@ for i in range(n):
 for i in range(n-1):
     print(' '*(i+1)+(str(n-i-1)+' ')*(n-i-1))
           
+#----------x----------x----------x----------x----------x----------x
+
+#To print a diamond, if n=4
+#    A 
+#   B B
+#  C C C
+# D D D D
+#  C C C
+#   B B
+#    A
+
+#1st method
+n = (int)(input("Enter a number :"))
+for i in range(n): #1st half of diamond i.e. pyramid
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print(chr(65+i),end=' ')
+    print()    
+for i in range(n-1): #2nd half of diamond i.e. inverted pyramid
+    print(' '*(i+1),end='')
+    for j in range(n-i-1):
+        print(chr(63+n-i),end=' ')
+    print()    
+  
+#2nd method/concise
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print(' '*(n-i-1)+(chr(65+i)+' ')*(i+1))
+for i in range(n-1):
+    print(' '*(i+1)+(chr(63+n-i)+' ')*(n-i-1))
+       
+#----------x----------x----------x----------x----------x----------x
+
+#To print a diamond, if n=4
+#    1 
+#   1 2
+#  1 2 3
+# 1 2 3 4
+#  1 2 3
+#   1 2
+#    1
+
+#1st method
+n = (int)(input("Enter a number :"))
+for i in range(n): #1st half of diamond i.e. pyramid
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print(chr(49+j),end=' ')
+    print()    
+for i in range(n-1): #2nd half of diamond i.e. inverted pyramid
+    print(' '*(i+1),end='')
+    for j in range(n-i-1):
+        print(chr(49+j),end=' ')
+    print()    
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print a diamond, if n=4
+#    A 
+#   A B
+#  A B C
+# A B C D
+#  A B C
+#   A B
+#    A
+
+#1st method
+n = (int)(input("Enter a number :"))
+for i in range(n): #1st half of diamond i.e. pyramid
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print(chr(65+j),end=' ')
+    print()    
+for i in range(n-1): #2nd half of diamond i.e. inverted pyramid
+    print(' '*(i+1),end='')
+    for j in range(n-i-1):
+        print(chr(65+j),end=' ')
+    print()
+           
 #----------x----------x----------x----------x----------x----------x       
       
         
