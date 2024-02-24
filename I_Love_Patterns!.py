@@ -736,7 +736,7 @@ for i in range(n-1):
            
 #----------x----------x----------x----------x----------x----------x
 
-#To print top half hallow diamond with *, if n=4
+#To print top half hollow diamond with *, if n=4
 #       ** 
 #     *    *
 #   *        *
@@ -752,7 +752,7 @@ for i in range(n):
            
 #----------x----------x----------x----------x----------x----------x
 
-#To print top half hallow diamond with *, if n=4
+#To print top half hollow diamond with *, if n=4
 #       * 
 #     *   *
 #   *       *
@@ -767,7 +767,7 @@ for i in range(n):
            
 #----------x----------x----------x----------x----------x----------x
 
-#To print top half hallow diamond, if n=4
+#To print top half hollow diamond, if n=4
 #       1 
 #     2   2
 #   3       3
@@ -782,7 +782,7 @@ for i in range(n):
            
 #----------x----------x----------x----------x----------x----------x
 
-#To print top half hallow diamond, if n=4
+#To print top half hollow diamond, if n=4
 #       A 
 #     B   B
 #   C       C
@@ -794,6 +794,96 @@ for i in range(n):
     if i >= 1:
         print('  '*(2*i-1)+chr(i+65),end='') 
     print() 
+           
+#----------x----------x----------x----------x----------x----------x 
+
+#To print top half hollow diamond, if n=4
+#       4 
+#     3   3
+#   2       2
+# 1           1
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print('  '*(n-i-1)+str(n-i),end=' ')
+    if i >= 1:
+        print('  '*(2*i-1)+str(n-i),end='') 
+    print() 
+          
+#----------x----------x----------x----------x----------x----------x 
+
+#To print top half hollow diamond, if n=4
+#       D 
+#     C   C
+#   B       B
+# A           A
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print('  '*(n-i-1)+chr(64+n-i),end=' ')
+    if i >= 1:
+        print('  '*(2*i-1)+chr(64+n-i),end='') 
+    print() 
+          
+#----------x----------x----------x----------x----------x----------x
+
+#To print bottom half hollow diamond, if n=4
+# *           *       
+#   *       *
+#     *   *
+#       *
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print('  '*(i)+'* ',end='')
+    if i != (n-1): #means except last row
+        print('  '*(2*n-2*i-3)+'*',end='') #spaces b/w 2 stars = [2n-2i-3]
+    print()
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print bottom half hollow diamond, if n=4
+# 4           4       
+#   3       3
+#     2   2
+#       1
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print('  '*(i)+str(n-i)+' ',end='')
+    if i != (n-1): 
+        print('  '*(2*n-2*i-3)+str(n-i),end='') 
+    print()
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print bottom half hollow diamond, if n=4
+# D           D       
+#   C       C
+#     B   B
+#       A
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print('  '*(i)+chr(64+n-i),end=' ')
+    if i != (n-1): 
+        print('  '*(2*n-2*i-3)+chr(64+n-i),end='') 
+    print()
+           
+#----------x----------x----------x----------x----------x----------x
+
+#To print bottom half hollow diamond, if n=4
+# 1           1       
+#   2       2
+#     3   3
+#       4
+
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    print('  '*(i)+str(i+1),end=' ')
+    if i != (n-1): 
+        print('  '*(2*n-2*i-3)+str(i+1),end='') 
+    print()
            
 #----------x----------x----------x----------x----------x----------x       
       
