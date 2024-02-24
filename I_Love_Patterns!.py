@@ -610,6 +610,20 @@ for i in range(n):
 for i in range(n-1): 
     print('  '*(i+1)+(str(n-i-1)+' ')*(n-i-1)) 
           
+#----------x----------x----------x----------x----------x----------x
+
+#To print left half of diamond, if n=4
+# 1***  
+# 12**
+# 123* 
+# 1234
+ 
+n = (int)(input("Enter a number :"))
+for i in range(n):
+    for j in range(i+1):
+        print(str(j+1),end='')
+    print('*'*(n-i-1))
+       
 #----------x----------x----------x----------x----------x----------x       
       
         
