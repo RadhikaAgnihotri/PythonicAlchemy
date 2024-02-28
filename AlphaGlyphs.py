@@ -45,6 +45,7 @@ for row in range(7):
 # *      *
 # * * * *   
 
+#1st approach
 for row in range(7):
     for col in range(5):
         if row in {0,3,6} and col in {0,1,2,3}:
@@ -53,7 +54,18 @@ for row in range(7):
             print('*',end=' ')
         else:
             print(' ',end=' ')
-    print()         
+    print()
+   
+#2nd approach
+for row in range(7):
+    for col in range(5):
+        if row % 3 == 0 and col != 4:
+            print('*', end=' ')  
+        elif row % 3 != 0 and col % 4 == 0:
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()                        
     
 #----------x----------x----------x----------x----------x----------x----------x----------
         
