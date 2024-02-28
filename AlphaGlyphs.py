@@ -1,12 +1,12 @@
 #To print the alphabet A using '*' symbol
 
-#  ***
-# *   *
-# *   *
-# *****
-# *   *
-# *   *
-# *   *
+#   * * *
+# *       *
+# *       *
+# * * * * *
+# *       *
+# *       *
+# *       *
 
 #Brute force approach
 n = 7
@@ -31,4 +31,29 @@ for row in range(7):
             print('*',end=' ')
         else:
             print(' ',end=' ')
-    print() #since next row will start in new line          
+    print() #since next row will start in new line  
+    
+#----------x----------x----------x----------x----------x----------x----------x----------
+
+#To print the alphabet B using '*' symbol
+
+# * * * *
+# *      *
+# *      *
+# * * * * 
+# *      *
+# *      *
+# * * * *   
+
+for row in range(7):
+    for col in range(5):
+        if row in {0,3,6} and col in {0,1,2,3}:
+            print('*',end=' ')
+        elif row in {1,2,4,5} and col in {0,4}:
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()         
+    
+#----------x----------x----------x----------x----------x----------x----------x----------
+        
