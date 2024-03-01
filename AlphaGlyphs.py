@@ -1,4 +1,4 @@
-#To print the alphabet A using '*' symbol
+#To print the letter A using '*' symbol
 
 #   * * *
 # *       *
@@ -35,7 +35,7 @@ for row in range(7):
     
 #----------x----------x----------x----------x----------x----------x----------x----------
 
-#To print the alphabet B using '*' symbol
+#To print the letter B using '*' symbol
 
 # * * * *
 # *      *
@@ -69,7 +69,7 @@ for row in range(7):
     
 #----------x----------x----------x----------x----------x----------x----------x----------
 
-#To print the alphabet C using '*' symbol
+#To print the letter C using '*' symbol
 
 #   * * *
 # *       *
@@ -93,7 +93,7 @@ for row in range(7):
 
 #----------x----------x----------x----------x----------x----------x----------x----------
 
-#To print the alphabet D using '*' symbol
+#To print the letter D using '*' symbol
 
 # * * * *
 # *       *
@@ -115,7 +115,7 @@ for row in range(7):
     
 #----------x----------x----------x----------x----------x----------x----------x----------
 
-#To print the alphabet E using '*' symbol
+#To print the letter E using '*' symbol
 
 # * * * * *
 # *       
@@ -137,7 +137,7 @@ for row in range(7):
     
 #----------x----------x----------x----------x----------x----------x----------x----------
 
-#To print the alphabet F using '*' symbol
+#To print the letter F using '*' symbol
 
 # * * * * *
 # *       
@@ -157,5 +157,31 @@ for row in range(7):
             print(' ',end=' ')
     print()   
 
+#----------x----------x----------x----------x----------x----------x----------x----------
+
+#To print the letter G using '*' symbol
+
+#   * * * 
+# *       *  
+# *       
+# *   * * *      
+# *       *
+# *       *
+#   * * * 
+
+for row in range(7):
+    for col in range (5):
+        if row in {0,6} and col in {1,2,3}:
+            print('*',end = ' ')
+        elif row in {1,4,5} and col in {0,4}:
+            print('*',end = ' ')
+        elif row == 2 and col == 0:
+            print('*', end=' ')
+        elif row == 3 and col != 1:
+            print('*',end =' ')
+        else:
+            print(' ',end=' ')
+    print() 
+    
 #----------x----------x----------x----------x----------x----------x----------x----------
         
