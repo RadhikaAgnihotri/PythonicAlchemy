@@ -1,4 +1,4 @@
-#Basic Binary search
+#Binary search
 
 #function to handle multiple occurrence issue
 def test_location(cards, query, mid):
@@ -135,3 +135,28 @@ for i, test in enumerate(tests, start=1):
     else:
         print(f"Testcase {i}: Failed. Expected {expected_output}, got {result}")
 
+#----------x----------x----------x----------x----------x----------
+
+#Binary Search Simple Implementation
+#Given a list sorted in ascending order
+
+def binary_search(sequence, number_to_find):
+    begin_index = 0
+    end_index = len(sequence) - 1
+
+
+    while begin_index <= end_index:
+        mid = (begin_index + end_index) // 2 #// is floor division
+        mid_value = sequence[mid]
+        if mid_value == number_to_find:
+            return mid
+        elif mid_value < number_to_find:
+            begin_index = mid + 1
+        elif mid_value > number_to_find:
+            end_index = mid - 1
+    return None   
+    
+sequence_a = [2,4,5,6,12,62,65,78,80,92]
+find_num = 65
+
+print(binary_search(sequence_a, find_num))
