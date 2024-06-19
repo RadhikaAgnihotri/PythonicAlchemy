@@ -27,7 +27,7 @@ def locate_card(cards, query):
             return mid 
         elif result == 'left':
             high = mid - 1 
-        elif result == 'right':
+        elif result == 'right': 
             low = mid + 1 
             
     return -1
