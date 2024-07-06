@@ -6,7 +6,7 @@ def test_location(cards, query, mid):
     print("mid:", mid, ", mid_number:", mid_number)
     if mid_number == query:
         if mid-1 >= 0 and cards[mid-1] == query:
-            return 'left' #position
+            return 'left' #position 
         else:
             return 'found'
     elif mid_number < query:
