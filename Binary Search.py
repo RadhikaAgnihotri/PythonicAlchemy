@@ -9,7 +9,7 @@ def test_location(cards, query, mid):
             return 'left'  
         else:
             return 'found'
-    elif mid_number < query:
+    elif mid_number < query: 
         return 'left'
     else:
         return 'right' 
