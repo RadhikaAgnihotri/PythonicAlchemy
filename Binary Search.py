@@ -1,6 +1,6 @@
 #Binary search
 
-#function to handle multiple occurrence issue
+#function to handle multiple occurrence issue 
 def test_location(cards, query, mid):
     mid_number = cards[mid]
     print("mid:", mid, ", mid_number:", mid_number)
