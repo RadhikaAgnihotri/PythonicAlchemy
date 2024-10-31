@@ -15,7 +15,7 @@ def test_location(cards, query, mid):
         return 'right'   
 
 def locate_card(cards, query):
-    low, high = 0, len(cards) -1 
+    low, high = 0, len(cards) -1  
     
     while low <= high:
         print("low:", low, ", high:", high)
