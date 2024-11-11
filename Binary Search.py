@@ -11,7 +11,7 @@ def test_location(cards, query, mid):
             return 'found'
     elif mid_number < query:  
         return 'left'    
-    else: 
+    else:  
         return 'right'   
 
 def locate_card(cards, query):
