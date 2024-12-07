@@ -91,7 +91,7 @@ tests.append({
 #cards is an empty list
 tests.append({
     'input' : {
-        'cards' : [],
+        'cards' : [], 
         'query' : 7
     },
     'output' : -1
