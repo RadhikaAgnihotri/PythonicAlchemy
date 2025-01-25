@@ -140,7 +140,7 @@ for i, test in enumerate(tests, start=1):
 #Binary Search Simple Implementation
 #Given a list sorted in ascending order
 
-def binary_search(sequence, number_to_find):
+def binary_search(sequence, number_to_find): 
     begin_index = 0
     end_index = len(sequence) - 1
 
