@@ -142,7 +142,7 @@ for i, test in enumerate(tests, start=1):
 
 def binary_search(sequence, number_to_find): 
     begin_index = 0
-    end_index = len(sequence) - 1
+    end_index = len(sequence) - 1   
 
 
     while begin_index <= end_index:
