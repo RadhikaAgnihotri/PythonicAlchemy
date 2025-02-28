@@ -159,4 +159,4 @@ def binary_search(sequence, number_to_find):
 sequence_a = [2,4,5,6,12,62,65,78,80,92] 
 find_num = 65     
 
-print(binary_search(sequence_a, find_num))
+print(binary_search(sequence_a, find_num)) 
